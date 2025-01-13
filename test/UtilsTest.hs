@@ -1,6 +1,9 @@
 module Main where
 import Utils
 import Test.HUnit
+
+import UtilsBitsTest
+
 import qualified System.Exit as Exit
 
 testStringSplitInfix :: Test
@@ -16,7 +19,13 @@ testIntListExtract :: Test
 testIntListExtract = TestCase (assertEqual "Should return indices of 3 to 6 of the list of integers" [1, 2, 3, 4] (Utils.extract [0, 4, 2, 1, 2, 3, 4, 8] (3,6)))
 
 tests :: Test
-tests = TestList [TestLabel "testStringSplitInfix" testStringSplitInfix, TestLabel "testStringExtract" testStringExtract, TestLabel "testIntListSplitInfix" testIntListSplitInfix, TestLabel "testIntListExtract" testIntListExtract]
+tests = TestList [
+  TestLabel "testStringSplitInfix" testStringSplitInfix, 
+  TestLabel "testStringExtract" testStringExtract, 
+  TestLabel "testIntListSplitInfix" testIntListSplitInfix, 
+  TestLabel "testIntListExtract" testIntListExtract,
+  TestLabel "testShiftRInfix" UtilsBitsTest.testShiftRInfix,
+  TestLabel "testShiftLInfix" UtilsBitsTest.testShiftLInfix]
 
 main :: IO ()
 main = do

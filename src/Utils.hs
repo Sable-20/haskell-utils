@@ -21,7 +21,7 @@ module Utils (
 --  It will split the string from position `from` to position `to` (inclusive). 
 --
 -- >>> "hello world" !@ (2,5)
--- "llo"
+-- "llo "
 (!@) :: [a] -> (Int, Int) -> [a]
 (!@) str (from, to) = drop from $ take (to + 1) str
 
