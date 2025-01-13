@@ -23,3 +23,4 @@ cabal.project.local~
 .ghc.envrionment.*
 .DS_Store/
 *.cabal
+report.html

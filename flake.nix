@@ -10,13 +10,23 @@
     flake-utils.lib.eachDefaultSystem (system:
       let pkgs = nixpkgs.legacyPackages.${system};
       in {
-        #packages = with pkgs; [
-        #  git
-        #  ghc
-        #  haskellPackages.cabal-install
-        #];
+        packages.${system}.default = pkgs.stdenv.mkDerivation {
+          name = "haskell utils";
+          buildInputs = [
+            pkgs.hpack
+            pkgs.zlib
+            pkgs.git
+            pkgs.ghc
+            pkgs.haskellPackages.cabal-install
+            pkgs.haskellPackages.zlib
+          ];
+        };
 
-        devShell = pkgs.mkShell {
+        # lint = pkgs.writeScriptBin "linter" ''
+        #   hlint src/ test/
+        # '';
+
+        devShells.${system}.default = pkgs.mkShell {
           buildInputs = [
             pkgs.hpack
             pkgs.zlib

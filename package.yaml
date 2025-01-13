@@ -21,7 +21,7 @@ library:
   source-dirs: src
 
 tests:
-  test1:
+  misc:
     main: UtilsTest.hs
     source-dirs:
       - test
