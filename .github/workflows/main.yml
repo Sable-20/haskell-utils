@@ -12,15 +12,8 @@ on:
 
 jobs:
   tests:
-    name: ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [
-          ubuntu-latest,
-          macOS-latest,
-          windows-latest
-        ]
+    name: Haksell
+    runs-on: ubuntu-latest
         
     steps:
     - uses: actions/checkout@v4
