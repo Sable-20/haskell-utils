@@ -18,9 +18,12 @@
 
         devShell = pkgs.mkShell {
           buildInputs = [
+            pkgs.hpack
+            pkgs.zlib
             pkgs.git
             pkgs.ghc
             pkgs.haskellPackages.cabal-install
+            pkgs.haskellPackages.zlib
           ];
         };
       } );

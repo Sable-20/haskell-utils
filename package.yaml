@@ -1,0 +1,30 @@
+spec-version: 0.36.0
+name: utils
+#
+#
+#        +-+-------- breaking API changes
+#        | | +------ non breaking API additions
+#        | | | +---- code changes no API change
+version: 0.1.0.0
+license: MIT
+author: Sable Ayala <sable262021@gmail.com>
+github: Sable-20/haskell-utils
+category: development
+extra-source-files:
+  - CHANGELOG.md
+ghc-options: -Wall
+
+dependencies:
+  - base ^>= 4.17
+
+library:
+  source-dirs: src
+
+tests:
+  test1:
+    main: UtilsTest.hs
+    source-dirs:
+      - test
+    dependencies:
+      - HUnit
+      - Utils
