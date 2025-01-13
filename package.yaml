@@ -5,7 +5,7 @@ name: Utils
 #        +-+-------- breaking API changes
 #        | | +------ non breaking API additions
 #        | | | +---- code changes no API change
-version: 0.1.0.0
+version: 0.1.1.0
 license: MIT
 author: Sable Ayala <sable262021@gmail.com>
 github: Sable-20/haskell-utils
