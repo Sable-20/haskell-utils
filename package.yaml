@@ -1,5 +1,5 @@
 spec-version: 0.36.0
-name: utils
+name: Utils
 #
 #
 #        +-+-------- breaking API changes
@@ -27,3 +27,4 @@ tests:
       - test
     dependencies:
       - HUnit
+      - Utils
