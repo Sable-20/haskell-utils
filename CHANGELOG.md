@@ -47,5 +47,6 @@ and this project adheres to [Semantic Versioning].
 
 <!-- Versions -->
 [unreleased]: https://github.com/Sable-20/haskell-utils/compare/v0.1.1.0...HEAD
+[0.1.1.0-rc0.1]: https://github.com/Sable-20/haskell-utils/tree/808ca76d711d8f5d425d135453146f0f8195dd27
 [0.1.1.0]: https://github.com/Sable-20/haskell-utils/compare/v0.1.1.0...v0.1.0.0
 [0.1.0.0]: https://github.com/Sable-20/haskell-utils/releases/tag/v0.1.0.0
