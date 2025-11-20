@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
         
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - uses: cachix/install-nix-action@v30
       with:
         github_access_token: ${{ secrets.GITHUB_TOKEN }}
@@ -61,7 +61,7 @@ jobs:
   #         #   ghc: 8.10.7
 
   #   steps:
-  #   - uses: actions/checkout@v4
+  #   - uses: actions/checkout@v6
 
   #   - uses: haskell/actions/setup@v2
   #     id: setup-haskell-cabal
@@ -111,7 +111,7 @@ jobs:
   #       ghc: ["latest"]
 
   #   steps:
-  #   - uses: actions/checkout@v4
+  #   - uses: actions/checkout@v6
 
   #   - uses: haskell/actions/setup@v2
   #     name: Setup Haskell Stack
@@ -142,7 +142,7 @@ jobs:
   #   runs-on: ubuntu-latest
 
   #   steps:
-  #   - uses: actions/checkout@v4
+  #   - uses: actions/checkout@v6
 
   #   - name: Run HLint
   #     env: 
